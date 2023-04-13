@@ -3,6 +3,7 @@ import Nav from "components/organisms/Nav";
 import Socials from "components/organisms/Socials";
 import Mail from "components/organisms/Mail";
 import { useAfter } from "hooks";
+import Introduction from "pages/Introduction";
 
 function App() {
 	const loadPage = useAfter(true, 2000);
@@ -13,6 +14,8 @@ function App() {
 			<Nav />
 			<Socials />
 			<Mail />
+
+			<Introduction />
 		</div>
 	);
 }

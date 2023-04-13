@@ -1,3 +1,5 @@
+import Button from "components/atoms/Button";
+
 function NavItem({ pos, name }: { pos: string; name: string }) {
 	return (
 		<div className="flex items-center ml-10">
@@ -31,8 +33,8 @@ export default function Nav() {
 				<NavItem pos="03." name="Work" />
 				<NavItem pos="04." name="Contact" />
 
-				<div className="w-24 h-10 border-2 border-primary rounded-md flex justify-center items-center ml-10 mr-12 hover:bg-[rgba(101,254,218,0.15)] cursor-pointer">
-					<h4 className="text-primary">Resume</h4>
+				<div className="ml-10 mr-12">
+					<Button>Resume</Button>
 				</div>
 			</div>
 		</div>
