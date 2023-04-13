@@ -28,10 +28,12 @@ export default function Nav() {
 				</svg>
 			</a>
 			<div className="flex">
-				<NavItem pos="01." name="About" />
-				<NavItem pos="02." name="Experience" />
-				<NavItem pos="03." name="Work" />
-				<NavItem pos="04." name="Contact" />
+				<div className="hidden md:flex">
+					<NavItem pos="01." name="About" />
+					<NavItem pos="02." name="Experience" />
+					<NavItem pos="03." name="Work" />
+					<NavItem pos="04." name="Contact" />
+				</div>
 
 				<div className="ml-10 mr-12">
 					<Button>Resume</Button>

@@ -4,7 +4,7 @@ import AnimateHoverText from "components/atoms/AnimateHoverText";
 
 export default function Socials() {
 	return (
-		<div className="fixed bottom-0 left-12 w-[40px] h-72 flex flex-col items-center justify-between">
+		<div className="fixed bottom-0 left-12 w-[40px] h-72 hidden md:flex flex-col items-center justify-between">
 			<a href="https://github.com/saisumith770" target="_blank">
 				<AnimateHoverText>
 					<FiGithub size={20} />
