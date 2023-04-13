@@ -7,6 +7,8 @@ export default {
 			animation: {
 				fadeOut: "fadeOut 0.6s ease-in-out",
 				fadeIn: "fadeIn 0.6s ease-in-out",
+				moveTopLeft: "moveTopLeft 0.4s ease-in-out",
+				moveBottomRight: "moveBottomRight 0.4s ease-in-out",
 			},
 
 			// that is actual animation
@@ -18,6 +20,14 @@ export default {
 				fadeIn: {
 					"0%": { opacity: 0 },
 					"100%": { opacity: 1 },
+				},
+				moveTopLeft: {
+					"0%": { transform: "translate(1.75rem,1.75rem)" },
+					"100%": { transform: "translate(0.75rem,0.75rem)" },
+				},
+				moveBottomRight: {
+					"0%": { transform: "translate(0.75rem,0.75rem)" },
+					"100%": { transform: "translate(1.75rem,1.75rem)" },
 				},
 			}),
 		},
