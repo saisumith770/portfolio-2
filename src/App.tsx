@@ -11,12 +11,12 @@ function App() {
 	if (!loadPage) return <Loader />;
 
 	return (
-		<div className="bg-background w-screen h-screen">
+		<div className="bg-background w-screen h-[300vh] lg:h-[200vh]">
 			<Nav />
 			<Socials />
 			<Mail />
 
-			{/* <Introduction /> */}
+			<Introduction />
 			<About />
 		</div>
 	);

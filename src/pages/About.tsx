@@ -1,6 +1,6 @@
 export function About() {
 	return (
-		<div className="w-[80%] md:w-[60%] h-[400px] absolute top-40 left-1/2 -translate-x-1/2 flex">
+		<div className="w-[80%] md:w-[60%] h-[400px] absolute top-[100vh] left-1/2 -translate-x-1/2 lg:flex">
 			<div className="w-full lg:w-1/2">
 				<div className="flex items-center">
 					<h4 className="text-primary font-mono text-xl xl:text-3xl">01.</h4>
@@ -24,7 +24,7 @@ export function About() {
 				<br />
 				<h4 className="font-sans text-base text-[#8992B1] w-full">Here are a few technologies I’ve been working with recently:</h4>
 				<br />
-				<div className="w-[450px] flex flex-wrap">
+				<div className="w-[300px] flex flex-wrap">
 					<h4 className="text-[#8992B1] font-mono w-1/2">
 						<span className="text-primary">▹</span> Typescript
 					</h4>
@@ -46,9 +46,9 @@ export function About() {
 				</div>
 			</div>
 
-			<div className="h-full flex items-center ml-20 relative group">
-				<img src="/saisumith.jpeg" className="w-80 h-80 rounded-sm z-10" />
-				<div className="w-80 h-80 border-primary border absolute rounded-sm translate-x-7 translate-y-7 z-0 animate-moveBottomRight group-hover:animate-moveTopLeft group-hover:translate-x-3 group-hover:translate-y-3"></div>
+			<div className="w-60 sm:w-80 lg:w-60 xl:w-80 h-full flex items-center lg:ml-20 relative group">
+				<img src="/saisumith.jpeg" className="w-full h-60 sm:h-80 lg:h-60 xl:h-80 rounded-sm z-10 object-cover" />
+				<div className="w-full h-60 sm:h-80 lg:h-60 xl:h-80 border-primary border absolute rounded-sm translate-x-7 translate-y-7 z-0 animate-moveBottomRight group-hover:animate-moveTopLeft group-hover:translate-x-3 group-hover:translate-y-3"></div>
 			</div>
 		</div>
 	);

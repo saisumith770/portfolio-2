@@ -11,7 +11,7 @@ function NavItem({ pos, name }: { pos: string; name: string }) {
 
 export default function Nav() {
 	return (
-		<div className="flex flex-row justify-between pt-8 items-center">
+		<div className="fixed w-screen flex flex-row justify-between pt-8 items-center bg-background z-20">
 			<a href="/">
 				<svg
 					xmlns="http://www.w3.org/2000/svg"
