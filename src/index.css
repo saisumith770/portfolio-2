@@ -1,0 +1,35 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.animate-logo {
+	stroke-dasharray: 320;
+	stroke-dashoffset: 0;
+	animation: dash 1s ease-in-out;
+}
+
+@keyframes dash {
+	0% {
+		stroke-dashoffset: 320;
+	}
+	30% {
+		stroke-dashoffset: 290;
+	}
+	100% {
+		stroke-dashoffset: 0;
+	}
+}
+
+.pop-out-logo {
+	animation: popOut 0.3s ease-in-out;
+	animation-fill-mode: forwards;
+}
+
+@keyframes popOut {
+	0% {
+		scale: 1;
+	}
+	100% {
+		scale: 0;
+	}
+}
