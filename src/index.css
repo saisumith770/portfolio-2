@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+html {
+	scroll-behavior: smooth;
+}
+
 ::-webkit-scrollbar {
 	width: 12px;
 }
@@ -20,6 +24,14 @@
 	stroke-dasharray: 320;
 	stroke-dashoffset: 0;
 	animation: dash 1s ease-in-out;
+}
+
+.remove-scrollbar::-webkit-scrollbar {
+	display: none;
+}
+
+.remove-scrollbar {
+	scrollbar-width: 0;
 }
 
 @keyframes dash {

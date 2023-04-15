@@ -6,20 +6,22 @@ import { useAfter } from "hooks";
 import Introduction from "pages/Introduction";
 import { About } from "pages/About";
 import Experience from "pages/Experience";
+import Contact from "pages/Contact";
 
 function App() {
 	const loadPage = useAfter(true, 2000);
 	if (!loadPage) return <Loader />;
 
 	return (
-		<div className="bg-background w-screen h-[300vh] lg:h-[200vh]">
+		<div className="bg-background w-screen h-[500vh] lg:h-[400vh]">
 			<Nav />
 			<Socials />
 			<Mail />
 
-			{/* <Introduction /> */}
-			{/* <About /> */}
+			<Introduction />
+			<About />
 			<Experience />
+			<Contact />
 		</div>
 	);
 }

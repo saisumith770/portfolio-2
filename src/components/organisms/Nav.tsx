@@ -1,17 +1,19 @@
 import Button from "components/atoms/Button";
 
-function NavItem({ pos, name }: { pos: string; name: string }) {
+function NavItem({ pos, name, link }: { pos: string; name: string; link: string }) {
 	return (
-		<div className="flex items-center ml-10">
-			<h4 className="text-primary font-mono text-sm">{pos}</h4>
-			<h4 className="text-[#ABB7D5] font-semibold text-[0.85rem] ml-1 hover:text-primary cursor-pointer">{name}</h4>
-		</div>
+		<a href={link}>
+			<div className="flex items-center ml-10">
+				<h4 className="text-primary font-mono text-sm">{pos}</h4>
+				<h4 className="text-[#ABB7D5] font-semibold text-[0.85rem] ml-1 hover:text-primary cursor-pointer">{name}</h4>
+			</div>
+		</a>
 	);
 }
 
 export default function Nav() {
 	return (
-		<div className="fixed w-screen flex flex-row justify-between pt-8 items-center bg-background z-20">
+		<div className="fixed w-screen flex flex-row justify-between pt-8 items-center bg-[rgba(10,24,46,0.6)] z-20 backdrop-blur-lg">
 			<a href="/">
 				<svg
 					xmlns="http://www.w3.org/2000/svg"
@@ -29,10 +31,10 @@ export default function Nav() {
 			</a>
 			<div className="flex">
 				<div className="hidden md:flex">
-					<NavItem pos="01." name="About" />
-					<NavItem pos="02." name="Experience" />
-					<NavItem pos="03." name="Work" />
-					<NavItem pos="04." name="Contact" />
+					<NavItem pos="01." name="About" link="#about" />
+					<NavItem pos="02." name="Experience" link="#experience" />
+					<NavItem pos="03." name="Work" link="#work" />
+					<NavItem pos="04." name="Contact" link="#contact" />
 				</div>
 
 				<div className="ml-10 mr-12">
