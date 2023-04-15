@@ -2,6 +2,20 @@
 @tailwind components;
 @tailwind utilities;
 
+::-webkit-scrollbar {
+	width: 12px;
+}
+
+::-webkit-scrollbar-thumb {
+	background-color: slategray;
+	border: 3px solid #0a182e;
+	border-radius: 10px;
+}
+
+::-webkit-scrollbar-track {
+	background: #0a182e;
+}
+
 .animate-logo {
 	stroke-dasharray: 320;
 	stroke-dashoffset: 0;

@@ -1,3 +1,5 @@
+const techStack = ["Typescript", "Javascript", "Golang", "Java", "Elixir", "Python"];
+
 export function About() {
 	return (
 		<div className="w-[80%] md:w-[60%] h-[400px] absolute top-[100vh] left-1/2 -translate-x-1/2 lg:flex">
@@ -25,24 +27,11 @@ export function About() {
 				<h4 className="font-sans text-base text-[#8992B1] w-full">Here are a few technologies I’ve been working with recently:</h4>
 				<br />
 				<div className="w-[300px] flex flex-wrap">
-					<h4 className="text-[#8992B1] font-mono w-1/2">
-						<span className="text-primary">▹</span> Typescript
-					</h4>
-					<h4 className="text-[#8992B1] font-mono w-1/2">
-						<span className="text-primary">▹</span> Javascript
-					</h4>
-					<h4 className="text-[#8992B1] font-mono w-1/2">
-						<span className="text-primary">▹</span> Golang
-					</h4>
-					<h4 className="text-[#8992B1] font-mono w-1/2">
-						<span className="text-primary">▹</span> Java
-					</h4>
-					<h4 className="text-[#8992B1] font-mono w-1/2">
-						<span className="text-primary">▹</span> Elixir
-					</h4>
-					<h4 className="text-[#8992B1] font-mono w-1/2">
-						<span className="text-primary">▹</span> python
-					</h4>
+					{techStack.map((item, index) => (
+						<h4 className="text-[#8992B1] font-mono w-1/2" key={index}>
+							<span className="text-primary">▹</span> {item}
+						</h4>
+					))}
 				</div>
 			</div>
 

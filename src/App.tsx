@@ -5,6 +5,7 @@ import Mail from "components/organisms/Mail";
 import { useAfter } from "hooks";
 import Introduction from "pages/Introduction";
 import { About } from "pages/About";
+import Experience from "pages/Experience";
 
 function App() {
 	const loadPage = useAfter(true, 2000);
@@ -16,8 +17,9 @@ function App() {
 			<Socials />
 			<Mail />
 
-			<Introduction />
-			<About />
+			{/* <Introduction /> */}
+			{/* <About /> */}
+			<Experience />
 		</div>
 	);
 }
