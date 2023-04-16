@@ -36,10 +36,11 @@ export default function Nav() {
 					<NavItem pos="03." name="Work" link="#work" />
 					<NavItem pos="04." name="Contact" link="#contact" />
 				</div>
-
-				<div className="ml-10 mr-12">
-					<Button>Resume</Button>
-				</div>
+				<a href="/Resume.pdf" target="_blank" rel="noopener noreferrer">
+					<div className="ml-10 mr-12">
+						<Button>Resume</Button>
+					</div>
+				</a>
 			</div>
 		</div>
 	);

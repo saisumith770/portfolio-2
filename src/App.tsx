@@ -13,7 +13,7 @@ function App() {
 	if (!loadPage) return <Loader />;
 
 	return (
-		<div className="bg-background w-screen h-[500vh] lg:h-[400vh]">
+		<div className="bg-background w-screen h-[480vh] lg:h-[380vh]">
 			<Nav />
 			<Socials />
 			<Mail />
