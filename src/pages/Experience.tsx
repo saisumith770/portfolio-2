@@ -9,7 +9,6 @@ export default function Experience() {
 			<div className="flex items-center">
 				<h4 className="text-primary font-mono text-xl xl:text-3xl">02.</h4>
 				<h4 className="text-[#CDD7F6] font-semibold text-[1rem] xl:text-[1.5rem] ml-1">Where I've Worked</h4>
-				<div className="w-0 sm:w-1/3 h-px my-8 bg-[#233554] ml-7" />
 			</div>
 
 			<div className="w-full h-60 md:flex">
@@ -50,7 +49,7 @@ export default function Experience() {
 					</div>
 				</div>
 				{!changeTab && (
-					<div className="w-[calc(100%-10.75rem)] h-full ml-3 mt-3">
+					<div className="w-full md:w-[calc(100%-10.75rem)] h-full ml-3 mt-3">
 						<h4 className="font-sans text-lg text-[#CDD7F6] font-semibold">
 							Fullstack Intern{" "}
 							<a href="https://www.onito.io/" target="_blank">
@@ -86,7 +85,7 @@ export default function Experience() {
 					</div>
 				)}
 				{changeTab && (
-					<div className="w-[calc(100%-10.75rem)] h-full ml-3 mt-3">
+					<div className="w-full md:w-[calc(100%-10.75rem)] h-full ml-3 mt-3">
 						<h4 className="font-sans text-lg text-[#CDD7F6] font-semibold">
 							Backend Intern{" "}
 							<a

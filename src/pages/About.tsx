@@ -8,7 +8,6 @@ export function About() {
 					<div className="flex items-center">
 						<h4 className="text-primary font-mono text-xl xl:text-3xl">01.</h4>
 						<h4 className="text-[#CDD7F6] font-semibold text-[1rem] xl:text-[1.5rem] ml-1">About Me</h4>
-						<div className="w-1/2 h-px my-8 bg-[#233554] ml-7" />
 					</div>
 
 					<h4 className="font-sans text-base text-[#8992B1] w-full">

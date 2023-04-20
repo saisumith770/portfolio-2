@@ -6,7 +6,7 @@ import { FaDiscord } from "react-icons/fa";
 export default function Contact() {
 	return (
 		<div
-			className="w-[80%] md:w-[60%] min-h-[400px] absolute top-[330vh] pt-[20vh] lg:top-[280vh] left-1/2 -translate-x-1/2 flex flex-col items-center"
+			className="w-[80%] md:w-[60%] min-h-[400px] absolute top-[590vh] pt-[20vh] lg:top-[540vh] left-1/2 -translate-x-1/2 flex flex-col items-center"
 			id="contact"
 		>
 			<h4 className="text-primary font-mono text-base">04. What's Next?</h4>
