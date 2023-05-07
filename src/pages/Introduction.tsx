@@ -14,9 +14,11 @@ export default function Introduction() {
 				</a>
 			</h4>
 
-			<div className="w-[200px] mt-8">
-				<Button>Check out my work</Button>
-			</div>
+			<a href="https://github.com/saisumith770" target="_blank" rel="noopener noreferrer">
+				<div className="w-[200px] mt-8">
+					<Button>Check out my work</Button>
+				</div>
+			</a>
 		</div>
 	);
 }

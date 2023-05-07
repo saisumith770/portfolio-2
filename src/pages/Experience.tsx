@@ -43,7 +43,9 @@ export default function Experience() {
 								className="w-1/2 md:w-full h-full md:h-1/2 hover:bg-[rgba(35,53,84,0.4)] flex items-center px-5 cursor-pointer"
 								onClick={() => setTabPos(true)}
 							>
-								<h4 className={`font-mono ${changeTab ? "text-primary" : "text-[#656E8B]"} text-sm font-semibold`}>Dhanush Steel</h4>
+								<h4 className={`font-mono ${changeTab ? "text-primary" : "text-[#656E8B]"} text-sm font-semibold`}>
+									Bajaj Steels & Industries
+								</h4>
 							</div>
 						</div>
 					</div>
@@ -88,11 +90,8 @@ export default function Experience() {
 					<div className="w-full md:w-[calc(100%-10.75rem)] h-full ml-3 mt-3">
 						<h4 className="font-sans text-lg text-[#CDD7F6] font-semibold">
 							Backend Intern{" "}
-							<a
-								href="https://www.google.com/maps/dir/23.5374922,87.2916702/dhanush+stainless+steel/@29.5382518,57.3030991,4z/data=!3m1!4b1!4m9!4m8!1m1!4e1!1m5!1m1!1s0x395e8714e3388a13:0xba90606f42a68aa5!2m2!1d72.631327!2d23.010461"
-								target="_blank"
-							>
-								<span className="text-primary">@ Dhanush Stainless Steel</span>
+							<a href="https://www.bajajsteels.in/contactus" target="_blank">
+								<span className="text-primary">@ Bajaj Steels & Industries Ltd</span>
 							</a>
 						</h4>
 
